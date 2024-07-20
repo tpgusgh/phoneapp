@@ -1,0 +1,19 @@
+.login{
+    display: inline-flex;
+    padding: 5px 42px 5px 47px;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 50px;
+    background: #000;
+    color: #FFF;
+    font-family: Pretendard;
+
+}
+.input{
+    width: 157px;
+    height: 31px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    border: 3px solid rgba(0, 0, 0, 0.40);
+    background: #FFF;
+}
