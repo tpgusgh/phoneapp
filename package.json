@@ -1,0 +1,12 @@
+{
+  "name": "phoneapp",
+  "version": "20.15.1",
+
+  "dependencies": {
+    "dayjs": "^1.11.12"
+  }
+  ,
+  "scripts": {
+    "start": "node ./phoneapp/package.json"
+  }
+}

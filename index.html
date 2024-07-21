@@ -11,9 +11,33 @@
     <img src="logo1.png" style="position: absolute; top: 10%; left: 35%;">
     <img src="logo2.png" style="position: absolute; top: 10%; left: 42%;">
     <input type="button" onclick="login()" value="로그인" class="login" style="position: absolute; top: 52%; right: 32.5%;">
-    <input type="text" class="input" placeholder="아이디를 입력해주세요." style="position: absolute; top: 30%; right: 28%;"> 
-    <input type="password" class="input" placeholder="비밀번호를 입력해주세요." style="position: absolute; top: 39%; right: 28%;">
+    <input type="text" id="id" class="input" placeholder="아이디를 입력해주세요." style="position: absolute; top: 30%; right: 28%;"> 
+    <input type="password" id="password" class="input" placeholder="비밀번호를 입력해주세요." style="position: absolute; top: 39%; right: 28%;">
     <p style="position: absolute; top: 69%; right:43%; font-size: 13px; color: gray; cursor: pointer;" onclick="insert()">회원가입</p>
     <script src="inddex.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCv784EuY9nV3bF9sQHwSEoOSl29LHquMA",
+          authDomain: "phoneapp-f87ba.firebaseapp.com",
+          databaseURL: "https://phoneapp-f87ba-default-rtdb.firebaseio.com",
+          projectId: "phoneapp-f87ba",
+          storageBucket: "phoneapp-f87ba.appspot.com",
+          messagingSenderId: "903474587945",
+          appId: "1:903474587945:web:42e47503ec3a9b76d56f38",
+          measurementId: "G-RYLNDVBDKM"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
 </html>
